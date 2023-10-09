@@ -5,12 +5,22 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './components/Home/Home.jsx';
+import AboutUs from './components/Pages/aboutUs/AboutUs';
+import Settings from './components/Pages/settings/Settings';
+import MainPage from './components/Pages/MainPage/MainPage';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Home></Home>,
+    path: '/',
+    element: <MainPage />
+  },
+  {
+    path: '/about-us',
+    element: <AboutUs></AboutUs>
+  },
+  {
+    path: '/settings',
+    element: <Settings></Settings>
   },
 ]);
 
